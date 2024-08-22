@@ -1,0 +1,17 @@
+@import "../../../../node_modules/normalize.css/normalize.css";
+@import "mixins";
+@import "variables";
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: $background-black-primary;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
