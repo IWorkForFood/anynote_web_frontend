@@ -1,0 +1,20 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+@mixin dev-border-highlight {
+  border: 1px solid #838383;
+  &:hover{
+    border: 1px solid #ddd;
+  }
+}

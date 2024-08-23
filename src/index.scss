@@ -1,0 +1,22 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "shared/UI/scss/mixins";
+@import "shared/UI/scss/variables";
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: $background-black--primary;
+}
+
+* {
+  color: $text-color;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
