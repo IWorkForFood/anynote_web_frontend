@@ -1,0 +1,30 @@
+@import "../../../../shared/UI/scss/variables";
+@import "../../../../shared/UI/scss/mixins";
+
+
+.LSideBarInner {
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  z-index: 8888;
+  box-sizing: content-box;
+  overflow: hidden;
+  background-color: $background-black--dark;
+  width: 0px;
+  height: 100%;
+  transition: all 0.25s ease-in;
+
+  &.active {
+    transition: all 0.2s ease-out;
+    width: 250px;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    @include flex-column;
+    box-sizing: border-box;
+    padding: 10px 0 0 14px;
+
+  }
+}

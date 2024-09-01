@@ -1,0 +1,10 @@
+@import "../../../../../../shared/UI/scss/variables";
+@import "../../../../../../shared/UI/scss/mixins";
+
+.NotesMenu {
+  width: 100%;
+  height: 100%;
+  &__container {
+    padding: 15px;
+  }
+}

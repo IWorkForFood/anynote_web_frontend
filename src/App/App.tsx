@@ -2,6 +2,7 @@
 
 import LSideBar from "../Modules/LSideBar/LSideBar.tsx";
 import "./App.scss"
+import WorkSpace from "../Modules/WorkSpace/WorkSpace.tsx";
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
 
                 <LSideBar/>
 
-
+                <WorkSpace/>
 
 
             </div>

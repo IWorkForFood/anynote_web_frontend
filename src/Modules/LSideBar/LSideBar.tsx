@@ -1,25 +1,22 @@
-//@ts-expect-error svg import
-import SettingsSVG from "../../shared/UI/icons/settings.svg"
-//@ts-expect-error svg import
-import NotesSVG from "../../shared/UI/icons/notes.svg"
+import NotesBtn from "./UI/NotesBtn.tsx";
+import SettingsBtn from "./UI/SettingsBtn.tsx";
+import TestBtn from "./UI/TestBtn.tsx";
 import "./LSideBar.scss"
+import LSideBarInner from "./Components/LSideBarInner/LSideBarInner.tsx";
+
 
 function LSideBar() {
     return (
-        <div className={"LSideBar"}>
-            <div className="LSideBar__container">
-                <div className="lsidebar-btn LSideBar__settings-btn lsidebar-btn--settings">
-                    <img src={SettingsSVG} alt=""/>
-                    <div className="icon-shadow"></div>
+        <>
+            <div className={"LSideBar"}>
+                <div className="LSideBar__container">
+                    <SettingsBtn/>
+                    <NotesBtn/>
+                    <TestBtn/>
                 </div>
-                <div className="lsidebar-btn LSideBar__notes-btn lsidebar-btn--notes">
-                    <img src={NotesSVG} alt=""/>
-                    <div className="icon-shadow"></div>
-                </div>
-                <div className="lsidebar-btn"></div>
-                <div className="lsidebar-btn"></div>
             </div>
-        </div>
+            <LSideBarInner/>
+        </>
     )
 }
 

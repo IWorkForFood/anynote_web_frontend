@@ -1,0 +1,33 @@
+@import "../../../../../../shared/UI/scss/variables";
+@import "../../../../../../shared/UI/scss/mixins";
+
+.NoteRender {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  @include flex-row;
+  justify-content: center;
+  &__container {
+    flex-shrink: 0;
+    width: 640px;
+    position: relative;
+    height: 2000px;
+  }
+  &__edit-area {
+    @include flex-column;
+    font-size: 1.1em;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  &__click-tracker--left{
+    flex-grow: 1;
+  }
+  &__click-tracker--right{
+    flex-grow: 1;
+  }
+}
+
+

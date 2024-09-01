@@ -1,0 +1,59 @@
+@import "../../../../shared/UI/scss/mixins";
+@import "../../../../shared/UI/scss/variables";
+
+.lsidebar-btn {
+  cursor: pointer;
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  height: $lsidebar-icon-size + 10;
+  width: 100%;
+  color: $text-color--dimmed;
+  //border-radius: 8px;
+  transition: all 0.2s linear;
+
+  &:hover {
+    .icon-shadow {
+      transition: all 0.2s linear;
+      background: rgba($background-black--primary, 0.1);
+    }
+  }
+
+
+  img {
+    height: $lsidebar-icon-size;
+    width: $lsidebar-icon-size;
+  }
+
+  .icon-shadow {
+    position: absolute;
+    background: rgba($background-black--primary, 0.4);
+    width: $lsidebar-icon-size;
+    height: $lsidebar-icon-size;
+    transition: all 0.2s linear;
+
+  }
+
+  &.active {
+    background: $background-black--highlight;
+
+    .icon-shadow {
+      background: transparent;
+    }
+  }
+
+  &--settings {
+    padding-top: 2px;
+    height: $lsidebar-icon-size + 14;
+    img {
+      width: $lsidebar-icon-size + 9;
+      height: $lsidebar-icon-size + 9;
+    }
+  }
+
+  &--notes {
+  }
+
+  &--test {
+  }
+}

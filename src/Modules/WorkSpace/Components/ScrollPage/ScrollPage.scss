@@ -1,0 +1,23 @@
+@import "../../../../shared/UI/scss/variables";
+@import "../../../../shared/UI/scss/mixins";
+
+.ScrollPage {
+  width: 100%;
+  height: 100%;
+  &__container {
+    @include flex-column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .os-scrollbar{
+    --os-handle-bg: #989694;
+    --os-handle-bg-hover: #afadab;
+    --os-handle-bg-active: #afadab;
+    transition: all 0.3s;
+    &:hover{
+      transition: all 0.3s;
+    }
+  }
+}
